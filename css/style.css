@@ -1,0 +1,586 @@
+/*  imports a font  poppins do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*CORES*/
+:root {
+    --main-color: #fdff00;
+    /*--main-color: #00eeff;*/
+    --text-color: #ffffffff;
+    --bg-color-01: #1f242d;
+    --bg-color-02: #323946;
+    --color-00: #0000001a;
+
+    /*Extra*/
+    --color-01: #999999;
+    --color-02: #009539;
+    --color-03: #7950f2;
+    --color-04: #c00000;
+    --color-05: #232323;
+}
+
+/*/CORES*/
+
+/*BODY-CONFIG*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/*BODY-CONFIG*/
+
+/*HTML-CONFIG*/
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color: var(--bg-color-01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*/HTML-CONFIG*/
+
+/*CABEÇALHO-CONFIG*/
+.logo {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    cursor: default;
+}
+
+.nav-responsivo {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bg-color-01);
+}
+
+.nav a, .nav-responsivo a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+}
+
+.nav a:hover, .nav-responsivo a:hover {
+    color: var(--main-color);
+}
+
+/*/CABEÇALHO-CONFIG*/
+
+/*SOBRE-CONFIG*/
+section {
+    min-height: 100vh;
+    padding: 6rem 6rem 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.sobre, .sobre1 {
+    background-color: var(--bg-color-02);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sobre-content, .sobre1-content {
+    width: 45%;
+}
+
+.sobre-content h3, .sobre1-content h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.sobre-content h1, .sobre1-content h1 {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 2.7rem;
+}
+
+.sobre-content p, .sobre1-content p {
+    margin-top: 1.2rem;
+    text-align: justify;
+}
+
+.redes-sociais a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: solid 0.15rem var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 1.8rem 0.5rem;
+    transition: 0.5s ease;
+    /*margin-trim: 1.8rem 1rem 1.8rem 0;*/
+}
+
+.redes-sociais img {
+    width: 3.5rem;
+
+}
+
+.redes-sociais a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color-02);
+    box-shadow: 0 0 0.3rem var(--main-color);
+}
+
+.sobre-content div {
+    text-align: center;
+}
+
+.sobre-img img, .sobre1-img img {
+    width: 100%;
+    margin-left: 3.8rem;
+    margin-bottom: -0.1rem;
+}
+
+/*BORDA DA IMAGEM*/
+.sobre-img {
+    border-right: solid 0.5rem;
+    border-bottom: solid 0.5rem;
+    border-image: linear-gradient(135deg, transparent 55%, var(--main-color)) 1;
+}
+
+/*/SOBRE-CONFIG*/
+
+/*HABILIDADES-CONFIG*/
+.habilidades h2, .projetos h2, .linguagens h2, .contato h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.habilidades-container, .linguagens-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.habilidades-container, .habilidades-box:hover, .linguagens-container, .linguagens-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.01);
+}
+
+.habilidades-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 15rem;
+    margin-bottom: 1rem;
+}
+
+.habilidades-box, .linguagens-box {
+    text-align: center;
+    border: solid 0.15rem var(--bg-color-01);
+    border-radius: 1.2rem;
+    background-color: var(--bg-color-02);
+    transition: 0.5s ease;
+    padding: 2rem 1rem 2.5rem;
+}
+
+.habilidades-box i, .linguagens-box i {
+    font-size: 4.3rem;
+    color: var(--main-color);
+}
+
+.habilidades-box h3, .linguagens-box h3 {
+    font-size: 1.5rem;
+}
+
+.habilidades-box p, .linguagens-box p {
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    /*n linhas do texto p...*/
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*/HABILIDADES-CONFIG*/
+
+/*LINGUAGENS-CONFIG*/
+.linguagens-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 15rem;
+    margin-bottom: 1rem;
+}
+
+/*LINGUAGENS-CONFIG*/
+
+/*PROJETOS-CONFIG*/
+.projetos {
+    background-color: var(--bg-color-02);
+}
+
+.projetos-container {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.projetos-box {
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem var(--bg-color-01);
+    overflow: hidden;
+    display: flex;
+}
+
+.projetos img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.projetos-box img:hover {
+    transform: scale(1.1);
+}
+
+.projetos-box .projetos-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(30rem);
+    transition: 0.5s ease;
+}
+
+.projetos-box:hover .projetos-layer {
+    transform: translateY(0);
+}
+
+.projetos-layer h4 {
+    font-size: 1.8rem;
+    color: var(--bg-color-01);
+}
+
+.projetos-layer p {
+    margin: 0.2rem 0 0.5rem;
+    color: var(--bg-color-01);
+}
+
+.projetos-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.projetos-layer a i {
+    font-size: 1.2rem;
+    color: var(--bg-color-02);
+}
+
+/*/PROJETOS-CONFIG*/
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: var(--bg-color-01);
+}
+
+/*/FOOTER*/
+
+/* BOTTON */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    color: var(--bg-color-02);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/*/BOTTON*/
+
+/*MENU-HAMBURGUER*/
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 2rem;
+    height: 0.3rem;
+    background-color: var(--text-color);
+    margin: 0.4rem;
+    transition: 0.3s ease;
+}
+
+/*/MENU-HAMBURGUER*/
+
+/*MEDIA-QUIERIES*/
+/* Extra Smal (xs) Smartphone (portrait)*/
+@media (min-width: 0px) {
+
+    /* header{
+        background-color: var(--color-02);
+        border: solid 3px var(--color-04);
+    }*/
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-responsivo a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 0.5rem 0rem;
+    }
+
+    section {
+        padding: 6rem 2.5rem;
+    }
+
+    .sobre {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .sobre-content {
+        width: 100%;
+    }
+
+    .sobre-content h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .sobre img {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .habilidades-container, .linguagens-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .habilidades-box, .linguagens-box {
+        width: 100%;
+    }
+}
+
+/* Extra Smal (xs) Smartphone (landscape)modo paisagem*/
+@media(min-width:576px) {
+    /*  header {
+        background-color: var(--color-02);
+        border: solid 3px var(--color-04);
+    }*/
+
+    .sobre-img {
+        width: 65%;
+        max-width: 65%;
+    }
+
+    .habilidades-box, .linguagens-box {
+        width: 70%;
+    }
+}
+
+/*Medium (md):  Tablet*/
+@media(min-width: 768px) {
+    /* header {
+        background-color: var(--color-02);
+        border: solid 3px var(--color-04);
+    }*/
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+
+    }
+
+    .nav-responsivo, .nav-responsivo a {
+        display: none;
+    }
+
+    .sobre {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .sobre img {
+        max-width: 100%;
+    }
+
+    .sobre-content {
+        width: 70%;
+    }
+    .habilidades-box, .linguagens-box {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .projetos-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+/*Large (ld): Notebook*/
+@media (min-width: 992px) {
+   /* header {
+        background-color: var(--color-02);
+        border: solid 3px var(--color-04);
+    }*/
+    .nav {
+        display: block;
+
+    }
+
+    .nav-responsivo, .nav-responsivo a {
+        display: none;
+    }
+
+
+    .sobre-img img {
+        width: 80%;
+        margin-left: 5rem;
+        margin-bottom: -0.1rem;
+    }
+    
+    /*BORDA DA IMAGEM*/
+    .sobre-img {
+        border-right: solid 0.5rem;
+        border-bottom: solid 0.5rem;
+        border-image: linear-gradient(135deg, transparent 55%, var(--main-color)) 1;
+    }
+
+    .habilidades-container, .linguagens-container {
+        grid-template-columns: auto auto;
+        /*flex-direction: row;*/
+        gap: 1.2rem;
+    }
+}
+
+/*Extra Large (xl): desktop*/
+@media (min-width: 1200px) {
+   /* header {
+        background-color: blue;
+        border: solid 3px var(--color-04);
+    }*/
+
+    .sobre h1 {
+        font-size: 2.7rem;
+    }
+
+    .sobre h3 {
+        font-size: 2rem;
+    }
+
+
+    .sobre-img img {
+        width: 60%;
+        margin-left: 14em;
+        margin-bottom: -0.1rem;
+    }
+    
+    /*BORDA DA IMAGEM*/
+    .sobre-img {
+        margin-right: 10%;
+        border-right: solid 0.5rem;
+        border-bottom: solid 0.5rem;
+        border-image: linear-gradient(135deg, transparent 55%, var(--main-color)) 1;
+    }
+
+    .projetos-container {
+        grid-template-columns: auto auto auto;
+
+    }
+
+}
+
+
+/*    .btn{
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    color: var(--bg-color-02);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+    }
+.btn:hover{
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    cursor: pointer;
+}*/
+
+/*js menu toggle*/
+
+.change .bar1 {
+    transform: translate(0, 0.65rem) rotate(-45deg);
+}
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -0.65rem) rotate(45deg);
+}

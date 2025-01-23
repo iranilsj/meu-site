@@ -1,0 +1,21 @@
+
+/*Extra Large (xl): desktop*/
+@media (min-width: 1200px){
+    .menu-hamburguer {
+        display: none;
+    }
+    .nav {
+        display: block;
+    }
+    .sobre {
+         flex-direction: row;
+        justify-content: space-evenly;    
+    }
+    
+    .formacoes-box, .habilidades-box, .linguagens-box, .projetos-box {
+        width: 25%;
+    }
+    .icon-whats {
+        margin-left: 1450px;
+    }
+}

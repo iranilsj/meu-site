@@ -1,0 +1,49 @@
+
+/* Extra Smal (xs) Smartphone (portrait)*/
+@media (min-width: 0px){
+    .menu-hamburguer {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-responsivo a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 0.5rem 0rem;
+        text-align: center;
+        color: var(--color-02);
+        border: solid 1px var(--text-color);
+    }
+    .nav-responsivo a:hover{
+        background-color: var(--text-color);
+    }
+    .sobre {
+        min-height: 100vh;
+        padding: 2rem 2rem 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }     
+    .sobre-content {
+        width: 105%;
+    }
+    .sobre-img img {
+        margin-left: 5.5rem;
+        margin-top: 1.5rem;
+        width: 60%;
+    }
+    .formacoes-box, .habilidades-box, .linguagens-box, .projetos-box {
+        width: 70%;
+    }
+    .icon-whats {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 400px;
+        margin-bottom: 50px;
+    }
+    .icon-whats i {
+        margin-top: 0.01rem;
+        font-size: 40px;
+    }
+}

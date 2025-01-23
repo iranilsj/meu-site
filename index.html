@@ -12,23 +12,32 @@
     />
     <!-- custom css-->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/MinWidth0.css" />
+    <link rel="stylesheet" href="css/MinWidth576.css" />
+    <link rel="stylesheet" href="css/MinWidth768.css" />
+    <link rel="stylesheet" href="css/MinWidth992.css" />
+    <link rel="stylesheet" href="css/MinWidth1200.css" />
   </head>
 
   <body>
     <header>
-      <a href="#" class="logo">Portifólio</a>
+      <a href="#sobre" class="logo">Portfólio</a>
       <div class="nav">
         <a href="#sobre">Sobre</a>
+        <a href="#formacoes">Formações</a>
+        <a href="#projetos">Projetos</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#linguagens">Linguagens</a>
-        <a href="#projetos">Projetos</a>
+        <a href="#login">Login</a>
       </div>
       <!--responsivo-->
       <div class="nav-responsivo">
         <a href="#sobre">Sobre</a>
+        <a href="#formacoes">Formações</a>
+        <a href="#projetos">Projetos</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#linguagens">Linguagens</a>
-        <a href="#projetos">Projetos</a>
+        <a href="#Login">Login</a>
       </div>
       <!--/responsivo-->
 
@@ -92,7 +101,7 @@
         <!--/MIDIAS SOCIAIS-->
 
         <!--CV-->
-        <div>
+        <div class="curriculo">
           <a
             href="arquivos/Iran_Lourenco.pdf"
             class="btn"
@@ -111,9 +120,71 @@
     </section>
     <!--/Sobre Section-->
 
+     <!--Formação Section-->
+     <section class="formacoes" id="formacoes">
+      <h2><br><br>Minhas <span>Formações</span></h2>
+
+      <div class="formacoes-container">
+                <!--TECNOLOGIA DA INFORMAÇÃO-->
+                <div class="formacoes-box">
+                  <a href="https://www.famonline.com.br/cursos/sistemas-de-informacao-ead/?_gl=1*j7o8ju*_gcl_aw*R0NMLjE3MzU4MzIyODUuQ2owS0NRaUFqOW03QmhEMUFSSXNBTnNJSXZDcmZmWnRXSHlQd2ZlbHhFVkROWUdmNVZhWjRZaHlFbjk4dUxnc0V3STRjWDVNZGpQOVY3a2FBcUZURUFMd193Y0I.*_gcl_au*MTg1MDc5NjQ3NC4xNzM1ODMyMjU1LjEwNTA0MjQ0NjMuMTczNjQ1NjkwNy4xNzM2NDU2OTA3*_ga*MzgwMTYwOTM3LjE3MzU4MzIyNTU.*_ga_0ZNLH9BM5B*MTczNzMzNTE1MC45LjEuMTczNzMzNTE1OS41MS4wLjA.#xd_co_f=MGMwMGNlM2QtODAyNi00OGRiLTg2MmEtYzA5MzAwMTQ2YzE1~" target="_blank">
+                  <h2>Técnologia da Informação.</h2>
+                  <h3>FAM</h3>
+                  <p>São Paulo - SP - Andamento</p>
+                </a>
+                </div>
+                
+                                <!--/TECNOLOGIA DA INFORMAÇÃO-->
+        <!--UNIDERP-->
+        <div class="formacoes-box">
+          <a href="https://hackersdobem.org.br/" target="_blank">
+          <!--<img src="img/uniderp.png" alt="foto faculdada uniderp" />-->
+          <h2>Cibersegurança</h2>
+          <h3>Rede Nacional de Ensino e Pesquisa (RNP)</h3>
+          <p>EAD - Andamento</p>
+        </a>
+        </div>
+        <!--/UNIDERP---->
+
+                <!--/TECNOLOGIA DA INFORMAÇÃO-->
+        <!--UNIDERP-->
+        <div class="formacoes-box">
+          <a href="https://www.uniderp.com.br/" target="_blank">
+          <!--<img src="img/uniderp.png" alt="foto faculdada uniderp" />-->
+          <h2>Arquitetura e Urbanismo</h2>
+          <h3>Anhangnuera - UNIDERP</h3>
+          <p>Campo Grande - MS - Concluído - 2018</p>
+        </a>
+        </div>
+        <!--/UNIDERP-->
+
+        <!--TTI-->
+        <div class="formacoes-box">
+          <a href="https://www.redeceteps.com.br/" target="_blank">
+          <h2>Técnico em Transações Imobiliárias</h2>
+          <h3>CETEPS</h3>
+          <p>Campo Grande - MS - Concluído - 2017</p>
+        </a>
+        </div>
+        
+        <!--/TTI-->
+      </div>
+              <!--PROJETOS Section-->
+              <section class="projetos" id="projetos">
+                <h2><br><br>Projetos <span>Mais Recentes</span></h2>
+          
+                <div class="projetos-container">
+                    <h3>EM CONSTRUÇÃO</h3>
+                  </div>
+                </div>
+              </section>
+              <!--/LINGUAGENS Section-->
+    </section>
+    <!--/Habilidades Section-->
+
     <!--Habilidades Section-->
     <section class="habilidades" id="habilidades">
-      <h2>Minhas <span>Habilidades</span></h2>
+      <h2><br><br>Minhas <span>Habilidades</span></h2>
 
       <div class="habilidades-container">
         <!--DESENVOLVIMENTO WEB-->
@@ -153,7 +224,7 @@
 
     <!--lINGUAGENS Section-->
     <section class="linguagens" id="linguagens">
-      <h2>Minhas <span>Linguagens</span></h2>
+      <h2><br><br>Minhas <span>Linguagens</span></h2>
 
       <div class="linguagens-container">
         <!--HTML-->
@@ -199,16 +270,14 @@
     </section>
     <!--/LINGUAGENS Section-->
 
-        <!--PROJETOS Section-->
-        <section class="projetos" id="projetos">
-            <h2>Projetos <span>Mais Recentes</span></h2>
-      
-            <div class="projetos-container">
-                <h3>EM CONSTRUÇÃO</h3>
-              </div>
-            </div>
-          </section>
-          <!--/LINGUAGENS Section-->
+
+            <!--FLUTUANTE-->
+  <div class="btn-whats">
+  </a>
+  <a href="https://api.whatsapp.com/send/?phone=5511994984709&text=Ol%C3%A1%2C+Iran%21+Gostei+do+seu+portfólio+vamos+conversar?+&type=phone_number&app_absent=0" class="icon-whats" target="_blank"
+    ><i class="bx bxl-whatsapp"></i
+  ></a>
+</div>
     <footer>
       <p>Copyright &copy; 2024 by Iran Lourenço</p>
     </footer>

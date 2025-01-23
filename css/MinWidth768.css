@@ -1,0 +1,14 @@
+@media(min-width:768px) {
+
+  .icon-whats {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 650px;
+}
+
+.icon-whats i {
+    padding: 3px;
+    margin-top: 0.2rem;
+    font-size: 50px;
+}
+}

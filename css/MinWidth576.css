@@ -1,0 +1,13 @@
+/* Extra Smal (xs) Smartphone (landscape)modo paisagem*/
+@media(min-width:576px) {
+    .icon-whats {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 500px;
+        margin-bottom: 50px;
+    }
+    .icon-whats i {
+        margin-top: 0.02rem;
+        font-size: 45px;
+    }
+}

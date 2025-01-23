@@ -1,0 +1,12 @@
+/*Large (ld): Notebook*/
+@media (min-width: 992px) {
+
+    .formacoes-box, .habilidades-box, .linguagens-box, .projetos-box {
+        margin-bottom: 0.9rem;
+        width: 35%;
+    }
+
+    .icon-whats {
+        margin-left: 900px;
+    }
+}
